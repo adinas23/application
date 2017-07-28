@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My application</title>
+  </head>
+  <body>
+<input type="button" name="add"  class="button1" value="Add issue" onclick="show(1)"/>
+<input type="button" name="createSprint"  class="button1" value="Create Sprint" onclick="show(2)" />
+<input type="button" name="searchbySprint"  class="button1" value="Update" onclick="show(3)" />
+<input type="button" name="searchbySprint"  class="button1" value="Search Sprint" onclick="show(4)" />
+<input type="button" name="searchbyStatus"  class="button1" value="Search Status" onclick="show(5)" />
+
+<div id="form-issue" class="container-form" style="display:none">
+  <form id="add-issue">
+    <div class="container-input">
+      <label>Type</label><input type=text id="type" > <br />
+    </div>
+    <div class="container-input">
+      <label>Name</label><input type=text id="name" > <br />
+    </div>
+    <div class="container-input">
+      <label>Sprint</label><input type=number id="sprint" > <br />
+    </div>
+    <div class="container-input">
+      <label>Description</label><input type=text id="description"  ><br />
+    </div>
+    <div class="container-input">
+      <label>Tasks</label><input type=text id="tasks" ><br />
+    </div>
+    <div class="container-input">
+      <label>Comment</label><input type=text id="comment" > <br />
+    </div>
+    <button onclick="addIssue(event)" class="button2">Add</button>
+  </form>
+</div>
+
+<div id="form-sprint" class="container-form" style="display:none">
+  <form id="add-sprint">
+    <div class="container-input">
+      <label>Name</label><input type=text id="nameSprint" > <br  />
+    </div>
+    <button onclick="addSprint(event)" class="button2">Add</button>
+  </form>
+</div>
+
+<div id ="form-update" class="container-form" style="display:none">
+  <form id="update-issue">
+    <div class="container-input">
+      <label>Id</label><input type=number id="updateId" > <br />
+    </div>
+    <div class="container-input">
+      <label>Type</label><input type=text id="updateType" > <br />
+    </div>
+    <div class="container-input">
+      <label>Name</label><input type=text id="updateName" > <br />
+    </div>
+    <div class="container-input">
+      <label>Sprint</label><input type=number id="updateSprint" > <br />
+    </div>
+    <div class="container-input">
+      <label>Assignee</label><input type=text id="updateAssignee" > <br />
+    </div>
+    <div class="container-input">
+      <label>Description</label><input type=text id="updateDescription"  ><br />
+    </div>
+    <div class="container-input">
+      <label>Tasks</label><input type=text id="updateTasks" ><br />
+    </div>
+    <div class="container-input">
+      <label>Comment</label><input type=text id="updateComment" > <br />
+    </div>
+    <button onclick="UpdateIssue(event)" class="button2">Update</button>
+  </form>
+</div>
+
+<div id ="filter-sprint" class="container-form" style="display:none">
+  <input type=text id="searchSprint" value="Search" > <br />
+  <button onclick="filterSprint(event)" class="button2">Filter</button>
+</div>
+
+<div id ="filter-status" class="container-form" style="display:none">
+  <input type=text id="searchStatus" value="Search" > <br />
+  <button onclick="filterStatus(event)"  class="button2" >Filter</button>
+</div>
+
+  <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+input {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+label {
+  display: inline-block;
+  width:15%;
+  text-align: left;
+}
+
+.button1 {
+  border-radius: 5px;
+  background-color:rgb(53, 128, 13);
+  color: white;
+  width:20%;
+  height:15%;
+}
+
+.button2 {
+  border-radius: 5px;
+  background-color:rgb(214, 105, 44);
+  color: white;
+  width:30%;
+  height:10%;
+
+}
+
+.container-form {
+  padding-top: 50px;
+  text-align: center;
+}
